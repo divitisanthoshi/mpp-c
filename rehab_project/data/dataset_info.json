@@ -1,0 +1,167 @@
+{
+  "total_sequences": 14910,
+  "exercises": 23,
+  "sequence_shape": [
+    60,
+    99
+  ],
+  "joints": 33,
+  "normalization": "hip-centred, torso-length scaled",
+  "per_exercise": [
+    {
+      "exercise": "squat",
+      "count": 1170
+    },
+    {
+      "exercise": "deep_squat",
+      "count": 1170
+    },
+    {
+      "exercise": "hurdle_step",
+      "count": 570
+    },
+    {
+      "exercise": "inline_lunge",
+      "count": 570
+    },
+    {
+      "exercise": "side_lunge",
+      "count": 570
+    },
+    {
+      "exercise": "sit_to_stand",
+      "count": 570
+    },
+    {
+      "exercise": "standing_leg_raise",
+      "count": 570
+    },
+    {
+      "exercise": "shoulder_abduction",
+      "count": 570
+    },
+    {
+      "exercise": "shoulder_extension",
+      "count": 570
+    },
+    {
+      "exercise": "shoulder_rotation",
+      "count": 570
+    },
+    {
+      "exercise": "shoulder_scaption",
+      "count": 570
+    },
+    {
+      "exercise": "hip_abduction",
+      "count": 570
+    },
+    {
+      "exercise": "trunk_rotation",
+      "count": 570
+    },
+    {
+      "exercise": "leg_raise",
+      "count": 570
+    },
+    {
+      "exercise": "reach_and_retrieve",
+      "count": 570
+    },
+    {
+      "exercise": "wall_pushup",
+      "count": 570
+    },
+    {
+      "exercise": "heel_raise",
+      "count": 570
+    },
+    {
+      "exercise": "bird_dog",
+      "count": 1170
+    },
+    {
+      "exercise": "glute_bridge",
+      "count": 570
+    },
+    {
+      "exercise": "clamshell",
+      "count": 570
+    },
+    {
+      "exercise": "chin_tuck",
+      "count": 570
+    },
+    {
+      "exercise": "marching_in_place",
+      "count": 570
+    },
+    {
+      "exercise": "step_up",
+      "count": 570
+    }
+  ],
+  "sources": {
+    "custom": {
+      "description": "Webcam recordings via MediaPipe BlazePose (33 joints)",
+      "how_to_add": "Record with: python scripts/record_data.py --exercise <name>"
+    },
+    "ntu": {
+      "description": "NTU RGB+D \u2014 Kinect V2 skeleton, 25 joints, mapped to MP-33",
+      "paper": "Shahroudy et al., CVPR 2016",
+      "download": "https://rose1.ntu.edu.sg/dataset/actionRecognition/",
+      "how_to_add": "Place .skeleton files in data/ntu/<ACTION_ID>/",
+      "action_ids": {
+        "squat": "A007",
+        "sit_to_stand": "A002",
+        "standing_leg_raise": "A023",
+        "shoulder_abduction": "A030",
+        "trunk_rotation": "A015",
+        "marching_in_place": "A012",
+        "step_up": "A049",
+        "wall_pushup": "A057"
+      }
+    },
+    "uiprmd": {
+      "description": "UI-PRMD \u2014 Vicon mocap, 10 rehab exercises, 20 joints, mapped to MP-33",
+      "paper": "Vakanski et al., IEEE Access 2018",
+      "download": "https://ieeexplore.ieee.org/document/8367416",
+      "how_to_add": "Place .csv files in data/uiprmd/<P00X>/",
+      "exercise_ids": {
+        "deep_squat": "P001",
+        "hurdle_step": "P002",
+        "inline_lunge": "P003",
+        "side_lunge": "P004",
+        "sit_to_stand": "P005",
+        "standing_leg_raise": "P006",
+        "shoulder_abduction": "P007",
+        "shoulder_extension": "P008",
+        "shoulder_scaption": "P009",
+        "trunk_rotation": "P010"
+      }
+    },
+    "kimore": {
+      "description": "KIMORE \u2014 OpenPose 18-joint + clinical quality scores, 5 exercises",
+      "paper": "Capecci et al., IEEE TNSRE 2019",
+      "download": "https://vrai.dii.univpm.it/content/kimore-dataset",
+      "how_to_add": "Place OpenPose JSON files in data/kimore/<EX>/",
+      "exercise_ids": {
+        "squat": "E1",
+        "side_lunge": "E2",
+        "trunk_rotation": "E3",
+        "shoulder_abduction": "E4",
+        "reach_and_retrieve": "E5"
+      }
+    }
+  },
+  "source_tally": {
+    "custom": 4350,
+    "ntu_syn": 1035,
+    "uiprmd_syn": 1035,
+    "kimore_syn": 1035,
+    "custom_aug": 4350,
+    "ntu_syn_aug": 1035,
+    "uiprmd_syn_aug": 1035,
+    "kimore_syn_aug": 1035
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "exercises": [
+    "squat",
+    "deep_squat",
+    "hurdle_step",
+    "inline_lunge",
+    "side_lunge",
+    "sit_to_stand",
+    "standing_leg_raise",
+    "shoulder_abduction",
+    "shoulder_extension",
+    "shoulder_rotation",
+    "shoulder_scaption",
+    "hip_abduction",
+    "trunk_rotation",
+    "leg_raise",
+    "reach_and_retrieve",
+    "wall_pushup",
+    "heel_raise",
+    "bird_dog",
+    "glute_bridge",
+    "clamshell",
+    "chin_tuck",
+    "marching_in_place",
+    "step_up"
+  ],
+  "sequence_length": 60
+}
